@@ -1,0 +1,34 @@
+Assignment 02 — CISC7204 Assgn02 Module 03 - Lab01 Student ID MC660061.ipynb
+
+This note follows the screenshots in notebook order. Each item records the task, the work shown, and what the output communicates.
+
+01. Waffle Charts, Word Clouds, and Regression Plots
+    Screenshot: 06-01-Waffle-Charts-Word-Clouds-and-Regression-Plots.png
+    Work and result: This section follows “Waffle Charts, Word Clouds, and Regression Plots”, prepares the data, and runs the notebook code.Main methods: sns.。The chart compares the selected data distribution, trend, or category differences; its axes, legend, and title match the analysis topic.
+
+02. Waffle Charts
+    Screenshot: 06-02-Waffle-Charts.png
+    Work and result: This section follows “Waffle Charts”, prepares the data, and runs the notebook code.Main methods: bar。The chart compares the selected data distribution, trend, or category differences; its axes, legend, and title match the analysis topic.
+
+03. Plotting with Seaborn
+    Screenshot: 06-04-Plotting-with-Seaborn.png
+    Work and result: This section follows “Plotting with Seaborn”, prepares the data, and runs the notebook code.Main methods: the pandas and plotting code shown in this section.The chart compares the selected data distribution, trend, or category differences; its axes, legend, and title match the analysis topic.
+
+04. Categorical Plots
+    Screenshot: 06-05-Categorical-Plots.png
+    Work and result: This section follows “Categorical Plots”, prepares the data, and runs the notebook code.Main methods: the pandas and plotting code shown in this section.The chart compares the selected data distribution, trend, or category differences; its axes, legend, and title match the analysis topic.
+
+05. countplot
+    Screenshot: 06-06-countplot.png
+    Work and result: This section follows “countplot”, prepares the data, and runs the notebook code.Main methods: plot、sns.。The chart compares the selected data distribution, trend, or category differences; its axes, legend, and title match the analysis topic.
+
+06. Barplot
+    Screenshot: 06-07-Barplot.png
+    Work and result: This section follows “Barplot”, prepares the data, and runs the notebook code.Main methods: groupby、plot、sns.。The chart compares the selected data distribution, trend, or category differences; its axes, legend, and title match the analysis topic.
+
+07. Regression Plot
+    Screenshot: 06-08-Regression-Plot.png
+    Work and result: This section follows “Regression Plot”, prepares the data, and runs the notebook code.Main methods: plot、sns.。The chart compares the selected data distribution, trend, or category differences; its axes, legend, and title match the analysis topic.
+
+API-key note: Some map screenshots show an API key required message in the background because the online basemap tile provider requires an external API key that is not available in this environment. This affects only the background tiles; the notebook code, local data, plotted points, analytical layers, and chart results are still valid and visible where rendered.
+

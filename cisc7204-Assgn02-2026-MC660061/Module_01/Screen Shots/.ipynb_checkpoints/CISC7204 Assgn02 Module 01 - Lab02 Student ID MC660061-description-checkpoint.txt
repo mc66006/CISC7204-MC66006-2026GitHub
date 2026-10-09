@@ -1,0 +1,5 @@
+Notebook: CISC7204 Assgn02 Module 01 - Lab02 Student ID MC660061.ipynb
+
+This notebook demonstrates the assigned data-visualization tasks using the provided dataset and the required Python plotting libraries. The screenshots are numbered in notebook order; each screenshot shows the task heading, code, and its visible result.
+
+Screenshot sections created: 1.
