@@ -8,7 +8,7 @@ This repository contains the CISC7204 coursework archive and a clearly separated
 
 ## Dataset and responsible use
 
-The analysis uses the course-provided apartment-rent file [`data/seattle_rent.csv`](data/seattle_rent.csv), copied from the original proposal folder. The matching public source is the [City of Seattle Apartment Market Rent Prices by Census Tract dataset](https://data.seattle.gov/dataset/Apartment-Market-Rent-Prices-by-Census-Tract/h27p-5k3i), prepared by the Seattle Office of Planning and Community Development from CoStar data. The catalog lists the [Open Data Commons PDDL](https://opendatacommons.org/licenses/pddl/summary) and provides CSV and ArcGIS downloads. No passwords, API keys, or private individual records are included. The analysis is ecological and uses tract-level aggregates.
+The analysis uses the course-provided apartment-rent file [`data/seattle_rent.csv`](data/seattle_rent.csv), copied from the original proposal folder. The matching public source is the [City of Seattle Apartment Market Rent Prices by Census Tract dataset](https://data.seattle.gov/dataset/Apartment-Market-Rent-Prices-by-Census-Tract/h27p-5k3i), prepared by the Seattle Office of Planning and Community Development from CoStar data. The catalog lists the [Open Data Commons PDDL](https://opendatacommons.org/licenses/pddl/summary) and provides CSV and ArcGIS downloads (checked 2026-10-28). No passwords, API keys, or private individual records are included. The analysis is ecological and uses tract-level aggregates.
 
 ## Methods
 
@@ -16,11 +16,11 @@ The analysis uses the course-provided apartment-rent file [`data/seattle_rent.cs
 
 ## Findings
 
-The cleaned file contains 3,931 usable rows covering 2001–2025. Mean rent changes over time and differs across communities. The mixed-income count can be compared with both rent level and year-over-year rent growth in the figures; neither association should be interpreted as a causal effect. The benchmark model's held-out R² and RMSE are printed by the script; they are descriptive prediction metrics rather than evidence that the predictors cause rent changes.
+The cleaned file contains 3,931 usable rows covering 2001–2025. Mixed-income count has a moderate positive correlation with median rent per unit (r = 0.464) and a near-zero correlation with year-over-year rent change (r = -0.014). The random 80/20 split linear-regression benchmark has test R² = 0.422 and RMSE = $329.08. Rent also changes over time and differs across communities. These are descriptive associations and prediction metrics, not evidence of causal effects.
 
 ## Limitations
 
-The data are repeated tract-level observations, so a random train/test split can be optimistic. Rent is a market measure and is not a complete affordability measure. Important factors such as location, unit mix, income, vacancy, and inflation are not controlled. Mixed-income count may be correlated with tract size and property composition. The supplied file's original licence and collection methodology are not documented in the repository and should be verified with the course staff.
+The data are repeated tract-level observations, so a random train/test split can be optimistic. Rent is a market measure and is not a complete affordability measure. Important factors such as location, unit mix, income, vacancy, and inflation are not controlled. Mixed-income count may be correlated with tract size and property composition. The source describes rent calculations based on market-rate and mixed-income multifamily properties with at least five rental units, using CoStar data prepared by the City.
 
 ## Reproduce the analysis
 

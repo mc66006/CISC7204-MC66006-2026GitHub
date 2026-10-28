@@ -1,13 +1,16 @@
-# Peer feedback record
+# Peer feedback and response
 
 ## Feedback received
 
-A classmate asked for clearer links between the research question, figures, and conclusions, and pointed out that the repository did not provide a simple way to reproduce the analysis.
+The earlier portfolio's simulated study-time project records this classmate feedback: scores near the 100-point ceiling made it difficult to inspect differences among students with high study hours.
 
 ## Improvement made
 
-I added `src/analyze.py`, `requirements.txt`, four labelled figures, a reproducibility section in `README.md`, and an explicit limitations section. The portfolio page now links directly to the generated figures and the final project repository.
+The response added a high-hour diagnostic with a zoomed, clearly labeled score axis, group means, descriptive confidence intervals, sample counts, and the share of observations at the ceiling.
 
-## Corresponding commit
+## Corresponding commits
 
-The improvement is recorded in commit [`23d3067`](https://github.com/mc66006/CISC7204-MC66006-2026GitHub/commit/23d306719ba22cedb92c18b975dfa40b67d472e5), **“Add reproducible portfolio analysis and documentation”**.
+- Analysis change: [`e8b49d6`](https://github.com/mc66006/data-science-project/commit/e8b49d6) — “Improve high-score analysis based on peer feedback”.
+- Portfolio publication: [`55836db`](https://github.com/mc66006/data-science-portfolio/commit/55836db) — “Add high-hour score diagnostic from peer feedback”.
+
+This existing feedback evidence concerns the earlier simulated project. The Seattle rent project added to this repository is a separate project; a new peer review of its analysis would strengthen the final submission.

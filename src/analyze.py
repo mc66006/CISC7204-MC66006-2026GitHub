@@ -37,7 +37,10 @@ def load_data() -> pd.DataFrame:
     for column in numeric:
         df[column] = pd.to_numeric(df[column], errors="coerce")
     df = df.dropna(subset=numeric + ["community"])
-    return df[df["rent_per_unit"] > 0].copy()
+    df = df[df["rent_per_unit"] > 0].copy()
+    # The source stores annual rent changes as proportions (for example, 0.05 = 5%).
+    df["yoy_change_unit"] = df["yoy_change_unit"] * 100
+    return df
 
 
 def save_figures(df: pd.DataFrame) -> None:
@@ -81,8 +84,10 @@ def main() -> None:
     model = LinearRegression().fit(X_train, y_train)
     print(f"Rows analysed: {len(df)}")
     print(f"Years: {int(df.Year.min())}-{int(df.Year.max())}")
-    print(f"Test R2: {r2_score(y_test, model.predict(X_test)):.3f}")
-    print(f"Test RMSE: {mean_squared_error(y_test, model.predict(X_test)) ** 0.5:.2f}")
+    print(f"Mixed-income/rent correlation: {df['mixed_income_count'].corr(df['rent_per_unit']):.3f}")
+    print(f"Mixed-income/rent-growth correlation: {df['mixed_income_count'].corr(df['yoy_change_unit']):.3f}")
+    print(f"Random 80/20 test R2: {r2_score(y_test, model.predict(X_test)):.3f}")
+    print(f"Random 80/20 test RMSE: {mean_squared_error(y_test, model.predict(X_test)) ** 0.5:.2f}")
     print(f"Saved figures to {FIGURES}")
 
 
