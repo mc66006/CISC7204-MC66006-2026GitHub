@@ -40,6 +40,7 @@ The command prints the row count and model metrics and regenerates the PNG files
 - `src/seattle_rent_original.ipynb` — original exploratory notebook from the coursework.
 - `figures/` — committed outputs used by the portfolio website.
 - `REFLECTION.md` — submission reflection.
+- `REFLECTION_SHORT.md` — checklist-length reflection.
 - `FEEDBACK.md` — peer feedback and the commit that addressed it.
 - `cisc7204-Assgn01-*`, `cisc7204-Assgn02-*`, and `cisc7204-BonusAssgn03-*` — retained coursework archive.
 
