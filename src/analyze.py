@@ -55,6 +55,11 @@ def save_figures(df: pd.DataFrame) -> None:
     ax.set(title="Mixed-income apartments and median rent", xlabel="Mixed-income apartment count", ylabel="Median rent per unit ($)")
     fig.tight_layout(); fig.savefig(FIGURES / "mixed-income-rent.png", bbox_inches="tight"); plt.close(fig)
 
+    fig, ax = plt.subplots(figsize=(8, 5.5), dpi=180)
+    sns.regplot(data=df, x="mixed_income_count", y="yoy_change_unit", scatter_kws={"alpha": 0.18}, ax=ax)
+    ax.set(title="Mixed-income apartments and year-over-year rent growth", xlabel="Mixed-income apartment count", ylabel="Year-over-year rent change (%)")
+    fig.tight_layout(); fig.savefig(FIGURES / "mixed-income-rent-growth.png", bbox_inches="tight"); plt.close(fig)
+
     top = df.groupby("community")["rent_per_unit"].mean().nlargest(10).sort_values()
     fig, ax = plt.subplots(figsize=(9, 5.5), dpi=180)
     top.plot.barh(ax=ax, color="#4472c4")

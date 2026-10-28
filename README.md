@@ -8,15 +8,15 @@ This repository contains the CISC7204 coursework archive and a clearly separated
 
 ## Dataset and responsible use
 
-The analysis uses the course-provided apartment-rent file [`data/seattle_rent.csv`](data/seattle_rent.csv), copied from the original proposal folder. It contains tract-year observations, rent measures, community names, mixed-income apartment counts, and property counts. The file is treated as an educational course dataset; the original upstream source and licence were not supplied with the file, so users should confirm the course's redistribution permission before publishing it elsewhere. No passwords, API keys, or private individual records are included. The analysis is ecological and uses tract-level aggregates.
+The analysis uses the course-provided apartment-rent file [`data/seattle_rent.csv`](data/seattle_rent.csv), copied from the original proposal folder. The matching public source is the [City of Seattle Apartment Market Rent Prices by Census Tract dataset](https://data.seattle.gov/dataset/Apartment-Market-Rent-Prices-by-Census-Tract/h27p-5k3i), prepared by the Seattle Office of Planning and Community Development from CoStar data. The catalog lists the [Open Data Commons PDDL](https://opendatacommons.org/licenses/pddl/summary) and provides CSV and ArcGIS downloads. No passwords, API keys, or private individual records are included. The analysis is ecological and uses tract-level aggregates.
 
 ## Methods
 
-`src/analyze.py` validates required columns, converts numeric fields, removes missing and non-positive rent rows, and produces four labelled figures: the time trend, mixed-income/rent association, community comparison, and correlation heatmap. A reproducible linear regression benchmark uses year, mixed-income count, and property count to predict rent. The original exploratory notebook is retained as [`src/seattle_rent_original.ipynb`](src/seattle_rent_original.ipynb).
+`src/analyze.py` validates required columns, converts numeric fields, removes missing and non-positive rent rows, and produces five labelled figures: the time trend, mixed-income/rent association, mixed-income/rent-growth association, community comparison, and correlation heatmap. A reproducible linear regression benchmark uses year, mixed-income count, and property count to predict rent. The original exploratory notebook is retained as [`src/seattle_rent_original.ipynb`](src/seattle_rent_original.ipynb).
 
 ## Findings
 
-The cleaned file contains 3,931 usable rows covering 2001–2025. Mean rent changes over time and differs across communities. Mixed-income count has an observable association with rent level, but the relationship should not be interpreted as a causal effect. The benchmark model's held-out R² and RMSE are printed by the script; they are descriptive prediction metrics rather than evidence that the predictors cause rent changes.
+The cleaned file contains 3,931 usable rows covering 2001–2025. Mean rent changes over time and differs across communities. The mixed-income count can be compared with both rent level and year-over-year rent growth in the figures; neither association should be interpreted as a causal effect. The benchmark model's held-out R² and RMSE are printed by the script; they are descriptive prediction metrics rather than evidence that the predictors cause rent changes.
 
 ## Limitations
 

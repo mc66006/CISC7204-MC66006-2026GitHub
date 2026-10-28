@@ -10,4 +10,4 @@ I added `src/analyze.py`, `requirements.txt`, four labelled figures, a reproduci
 
 ## Corresponding commit
 
-The improvement is recorded in the commit whose subject is **“Add reproducible portfolio analysis and documentation”**. The commit URL is available in the repository history after pushing this change.
+The improvement is recorded in commit [`23d3067`](https://github.com/mc66006/CISC7204-MC66006-2026GitHub/commit/23d306719ba22cedb92c18b975dfa40b67d472e5), **“Add reproducible portfolio analysis and documentation”**.
