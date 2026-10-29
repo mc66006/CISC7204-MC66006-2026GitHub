@@ -1,16 +1,21 @@
 # Peer feedback and response
 
+**Status: pending a verified classmate review.** No reviewer feedback has been recorded here for the Seattle rent or College Scorecard projects. The high-score diagnostic in the separate simulated study-time project is a visualization refinement; it should not be presented as peer feedback unless the original reviewer and comment are confirmed.
+
+After a classmate reviews a project, replace this template with the actual details:
+
 ## Feedback received
 
-The earlier portfolio's simulated study-time project records this classmate feedback: scores near the 100-point ceiling made it difficult to inspect differences among students with high study hours.
+- Project reviewed:
+- Reviewer name or initials (only if permitted):
+- Date:
+- Feedback, summarized accurately:
 
 ## Improvement made
 
-The response added a high-hour diagnostic with a zoomed, clearly labeled score axis, group means, descriptive confidence intervals, sample counts, and the share of observations at the ceiling.
+- Change made in response:
+- Why the change addresses the feedback:
+- Files changed:
+- Corresponding commit:
 
-## Corresponding commits
-
-- Analysis change: [`e8b49d6`](https://github.com/mc66006/data-science-project/commit/e8b49d6) — “Improve high-score analysis based on peer feedback”.
-- Portfolio publication: [`55836db`](https://github.com/mc66006/data-science-portfolio/commit/55836db) — “Add high-hour score diagnostic from peer feedback”.
-
-This existing feedback evidence concerns the earlier simulated project. The Seattle rent project added to this repository is a separate project; a new peer review of its analysis would strengthen the final submission.
+Keep this record factual. The feedback requirement is complete only after a real review, a committed improvement responding to it, and the corresponding commit are documented.

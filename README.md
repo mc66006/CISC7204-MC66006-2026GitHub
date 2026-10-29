@@ -41,7 +41,7 @@ The command prints the row count and model metrics and regenerates the PNG files
 - `figures/` — committed outputs used by the portfolio website.
 - `REFLECTION.md` — submission reflection.
 - `REFLECTION_SHORT.md` — checklist-length reflection.
-- `FEEDBACK.md` — peer feedback and the commit that addressed it.
+- `FEEDBACK.md` — record template; a verified classmate review and response are still needed.
 - `cisc7204-Assgn01-*`, `cisc7204-Assgn02-*`, and `cisc7204-BonusAssgn03-*` — retained coursework archive.
 
 The Assignment 02 archive now includes the Pair 14 college-tuition proposal in [`cisc7204-Assgn02-2026-MC660061/personalproposal/`](cisc7204-Assgn02-2026-MC660061/personalproposal/). Its notebook and data are kept with the proposal; Module 01–05 folders remain coursework exercises and do not need separate websites.

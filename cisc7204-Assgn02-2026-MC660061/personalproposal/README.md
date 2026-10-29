@@ -9,16 +9,19 @@ Is annual undergraduate tuition associated with the median earnings of students 
 ## Files
 
 - `CISC7204-Assgn02-Pair14-RevisedProjectProposal.docx` — revised proposal, scope, success criteria, task plan, and collaboration plan.
-- `CISC7204-Assgn02-Pair14-CollegeTuition-Earnings-Analysis.ipynb` — executable notebook with data selection, cleaning, summary statistics, and planned visualizations.
+- `CISC7204-Assgn02-Pair14-CollegeTuition-Earnings-Analysis.ipynb` — executable notebook with data selection, cleaning, summary statistics, visualizations, findings, and limitations.
 - `Most-Recent-Cohorts-Institution.csv` — unchanged source extract supplied with the proposal archive.
 - `cleaned_data.csv` — notebook output after restricting to predominantly four-year institutions and removing missing, suppressed, and invalid analysis values.
+- `analyze_college_scorecard.py` — standalone script that recreates the cleaning, summary statistics, and figures.
+- `RESULTS.md` — executed findings, limitations, and reproducibility status.
+- `figures/` — generated charts used in the Portfolio showcase.
 
 ## Data provenance and responsible use
 
-The raw file is an extract from the U.S. Department of Education College Scorecard institution-level data. The official data page is <https://collegescorecard.ed.gov/data/>. The analysis uses institution-level aggregate measures, including tuition and median earnings ten years after entry; it does not contain passwords, API keys, or direct individual records. The source's current data-use notice should be checked before redistributing the raw extract outside this coursework archive.
+The raw file is an extract from the U.S. Department of Education College Scorecard institution-level data. The official data page is <https://collegescorecard.ed.gov/data/>. On 2026-10-29, that page stated that College Scorecard data were last updated on 2026-10-15; the supplied archived CSV's exact release date has not been verified. The analysis uses institution-level aggregate measures, including tuition and median earnings ten years after entry; it does not contain passwords, API keys, or direct individual records. The source's current data-use notice should be checked before redistributing the raw extract outside this coursework archive.
 
 ## Reproduce the notebook
 
 Keep the notebook, `Most-Recent-Cohorts-Institution.csv`, and `cleaned_data.csv` in this folder. Install the packages listed in the repository-level [`requirements.txt`](../../requirements.txt), open the notebook in Jupyter, and run the cells from top to bottom. The notebook reads the raw CSV, writes `cleaned_data.csv`, and produces the tuition, regression, radar, and violin visualizations.
 
-The notebook is a proposal-stage implementation sample. It demonstrates the planned analysis and chart construction; a final submission should add a findings discussion, a clear limitation statement, and a check that every conclusion matches the executed outputs.
+The original proposal and notebook are retained, with a findings and limitations discussion added to the notebook. The standalone script and [`RESULTS.md`](RESULTS.md) provide an independently rerunnable analysis and reproducibility record.
