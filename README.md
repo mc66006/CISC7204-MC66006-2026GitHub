@@ -1,8 +1,8 @@
-# Seattle Apartment Rent and Mixed-Income Housing
+# CISC7204 Coursework Archive and Proposal Prerequisite Practice
 
-**Project status:** Complete course portfolio project (reproducible descriptive analysis).
+**Project status:** Coursework archive and preliminary practice supporting later proposal projects.
 
-This repository contains the CISC7204 coursework archive and a clearly separated final portfolio project. The final project asks:
+This repository contains the CISC7204 coursework archive and a reproducible Seattle rent analysis. It is the **preliminary practice project** that supports the later Assignment 01 and Assignment 02 proposal projects.
 
 > How are mixed-income apartment counts associated with median apartment rent per unit across Seattle census tracts from 2001 to 2025? Does the pattern differ for year-over-year rent growth, and how well can year, mixed-income count, and property count predict rent levels?
 
@@ -44,11 +44,6 @@ The command prints the row count and model metrics and regenerates the PNG files
 - `FEEDBACK.md` — record template; a verified classmate review and response are still needed.
 - `cisc7204-Assgn01-*`, `cisc7204-Assgn02-*`, and `cisc7204-BonusAssgn03-*` — retained coursework archive.
 
-The proposal materials are maintained in two standalone repositories:
-
-- [Assignment 01 — Seattle Rent Proposal](https://github.com/mc66006/CISC7204-Assignment01-Seattle-Rent-Proposal)
-- [Assignment 02 — College Tuition Proposal](https://github.com/mc66006/CISC7204-Assignment02-College-Tuition-Proposal)
-
-The Module 01–05 folders remain coursework exercises and do not need separate websites. The original proposal folders were removed from this archive to keep each proposal independently reviewable.
+The proposal materials are maintained separately from this coursework archive. The Module 01–05 folders and the Seattle analysis here are preliminary exercises; they are not the proposal projects themselves. The proposal project pages are linked from the portfolio website.
 
 Portfolio website: <https://mc66006.github.io/data-science-portfolio/>
