@@ -44,4 +44,6 @@ The command prints the row count and model metrics and regenerates the PNG files
 - `FEEDBACK.md` — peer feedback and the commit that addressed it.
 - `cisc7204-Assgn01-*`, `cisc7204-Assgn02-*`, and `cisc7204-BonusAssgn03-*` — retained coursework archive.
 
+The Assignment 02 archive now includes the Pair 14 college-tuition proposal in [`cisc7204-Assgn02-2026-MC660061/personalproposal/`](cisc7204-Assgn02-2026-MC660061/personalproposal/). Its notebook and data are kept with the proposal; Module 01–05 folders remain coursework exercises and do not need separate websites.
+
 Portfolio website: <https://mc66006.github.io/data-science-portfolio/>
