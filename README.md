@@ -44,6 +44,11 @@ The command prints the row count and model metrics and regenerates the PNG files
 - `FEEDBACK.md` — record template; a verified classmate review and response are still needed.
 - `cisc7204-Assgn01-*`, `cisc7204-Assgn02-*`, and `cisc7204-BonusAssgn03-*` — retained coursework archive.
 
-The Assignment 02 archive now includes the Pair 14 college-tuition proposal in [`cisc7204-Assgn02-2026-MC660061/personalproposal/`](cisc7204-Assgn02-2026-MC660061/personalproposal/). Its notebook and data are kept with the proposal; Module 01–05 folders remain coursework exercises and do not need separate websites.
+The proposal materials are maintained in two standalone repositories:
+
+- [Assignment 01 — Seattle Rent Proposal](https://github.com/mc66006/CISC7204-Assignment01-Seattle-Rent-Proposal)
+- [Assignment 02 — College Tuition Proposal](https://github.com/mc66006/CISC7204-Assignment02-College-Tuition-Proposal)
+
+The Module 01–05 folders remain coursework exercises and do not need separate websites. The original proposal folders were removed from this archive to keep each proposal independently reviewable.
 
 Portfolio website: <https://mc66006.github.io/data-science-portfolio/>
